@@ -1,0 +1,6 @@
+@import "../utils/mixins.scss";
+header{
+    @include flexed;
+    width:100%;
+    font-size: 2em;
+}

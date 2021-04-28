@@ -1,0 +1,34 @@
+@import "../utils/mixins.scss";
+@import "../utils/variables.scss";
+@import "../base/formatting.scss";
+footer{
+    @include flexed;
+    padding: 0 0 25px 25px;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: left;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    h1{
+        font-size: 1.2em;
+        margin: 25px 0 15px 0;
+    }
+    ul{
+        li{
+            margin: 10px 0 0 0;
+            i{
+                margin-right: 10px;
+                transform: rotate(-45deg);
+                width: 10px;
+            }
+            a{
+                color: white;
+                &:hover{
+                    font-weight: bold;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+input {
+    display: none;
+}
+.label-box{
+    width: 20%;
+    height: 100%;
+}
+.heart-label{
+    display: block;
+    position: relative;
+    top: 25%;
+    left: 15%;
+    height: 50%;
+    width: 75%;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-align: right;
+}
+.emptyheart {
+    position: absolute;
+    z-index: -1;
+    left: 5px;
+}
+.fullheart {
+    position: absolute;
+    left: 5px;
+    background: linear-gradient(175deg, #9356dc 0%, #ff79da 80%, #ff79da 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0);
+    transition-property: transform;
+}
+input:checked + .fullheart {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}

@@ -1,0 +1,12 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+.button{
+    @include button-shadow;
+    height: 50px;
+    padding: 0 10px 0 20px;
+    margin: 35px 0 50px 0 ;
+    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    color: #fff;
+    font-size: bold;
+    
+}

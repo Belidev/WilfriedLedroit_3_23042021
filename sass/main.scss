@@ -1,3 +1,6 @@
-div{
-    background-color: green;
-}
+@import "./base/formatting.scss";
+@import "./layouts/header.scss";
+@import "./layouts/sections.scss";
+@import "./layouts/footer.scss";
+@import "./components/elements.scss";
+@import "./components/Animations.scss";
