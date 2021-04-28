@@ -13,10 +13,33 @@ footer{
     h1{
         font-size: 1.2em;
         margin: 25px 0 15px 0;
+        @media screen and (min-width: 719px){
+            width: 100%;
+            font-size: 2em;
+            text-align: center
+        }
+    }
+    nav{
+        @media screen and (min-width:719px) {
+            width: 100%;
+        }
     }
     ul{
+        @media screen and (min-width:719px) {
+            @include flexed;
+            flex-wrap: wrap;
+        }
         li{
             margin: 10px 0 0 0;
+            @media screen and (min-width:719px) {
+                width: 50%;
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+            @media screen and (min-width:1280px) {
+                width: 25%;
+                font-size: 1.3em;
+            }
             i{
                 margin-right: 10px;
                 transform: rotate(-45deg);

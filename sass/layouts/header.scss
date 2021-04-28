@@ -3,4 +3,10 @@ header{
     @include flexed;
     width:100%;
     font-size: 2em;
+    @media screen and (min-width: 719px){
+        font-size: 3em;
+    }
+    @media screen and (min-width: 1280px){
+        font-size: 4em;
+    }
 }
