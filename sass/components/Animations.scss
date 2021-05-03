@@ -20,11 +20,12 @@ input {
     position: absolute;
     z-index: -1;
     left: 5px;
+    transition: all 0.5s;
 }
 .fullheart {
     position: absolute;
     left: 5px;
-    background: linear-gradient(175deg, #9356dc 0%, #ff79da 80%, #ff79da 100%);
+    @include gradient-color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(0);
@@ -33,4 +34,7 @@ input {
 input:checked + .fullheart {
     transform: scale(1.2);
     transition-duration: 0.5s;
+    +.emptyheart{
+        opacity: 0;
+    }
 }

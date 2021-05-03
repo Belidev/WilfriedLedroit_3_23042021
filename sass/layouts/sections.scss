@@ -1,5 +1,6 @@
 @import "../utils/mixins.scss";
 @import "../utils/variables.scss";
+@import "../components/elements.scss";
 .research{
     @include flexed;
     flex-direction: column;
@@ -17,7 +18,7 @@
     &__menu{
         @include flexed;
         flex-direction: column;
-        background-color: hsla(0, 0, 0, 2%);
+        background-color: hsla(0, 0, 0, 10%);
         width: 100%;
         &--title{
             width: 70%;
@@ -51,6 +52,7 @@
             @include button-shadow;
             width: 275px;
             padding: 25px 50px 25px 0;
+            margin: 5px;
             background-color: hsla(0, 0, 0, 2%);
             @media screen and (min-width:1000px){
                 width: 275px;
@@ -151,6 +153,159 @@
                 border-radius: 30px 30px 0 0;
                 object-fit: cover;
             }
+        }
+    }
+}
+.restaurant-box{
+    width: 100%;
+    height: 300px;
+    &--picture{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    position: relative;
+    border-radius: 50px;
+    top: -50px;
+    width: 100%;
+    background-color:rgb(240, 240, 240);
+    @media screen and (min-width : 787px) {
+        width: 95%;
+    }
+    &__box{
+        @include flexed;
+        justify-content: flex-start;
+        position: relative;
+        top: 50;
+        .heart-label{
+            position: absolute;
+            left: 300px;
+            top: 0px;
+            width: 30px;
+            height: 25px;
+            @media screen and (min-width : 787px) {
+                left: 335px;
+            }
+            .emptyheart{
+                z-index: 0;
+            }
+            .fullheart{
+                z-index: 1;
+            }
+        }
+    }
+    &--title{
+        text-align: left;
+        width: 80%;
+        font-size: 1.7em;
+        padding-left: 20px;
+        margin-bottom: 100px;
+        @media screen and (min-width : 787px) {
+            width: 100%;
+            font-size: 2em;
+        }
+    }
+}
+.meal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    @media screen and (min-width : 787px) {
+        justify-content: space-evenly;
+    }
+    &--title{
+        width: 100%;
+        font-size: 1.3em;
+        text-align: left;
+        margin-bottom: 20px;
+        @media screen and (min-width : 787px) {
+            text-align: center;
+            border-bottom: solid $tertiary-color;
+            width: 90%;
+            margin : 25px 0 25px 0;
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 50px;
+            height: 5px;
+            border-bottom: solid $tertiary-color;
+            @media screen and (min-width : 787px) {
+                display: none;
+            }
+        }
+    }
+}
+.meal__choice{
+    display: flex;
+    overflow: hidden;
+    margin: 10px;
+    background-color: white;
+    @include button-shadow;
+    &:hover{
+        .meal__choice__animation{
+            transition-duration: 1s;
+            margin-right: 0px;
+        }
+        .meal__choice__animation__iconbox{
+            transform: rotate(720deg);
+        }
+        .meal__choice__box{
+            transition-duration: 1s;
+            width: 225px;
+            @media screen and (min-width : 787px) {
+                width: 275px;
+            }
+        }
+}
+    &__box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 15px;
+        width: 275px;
+        height: 75px;
+        transition-duration: 1s;
+        @media screen and (min-width : 787px) {
+            width: 325px;
+        }
+        &--title{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        &--text{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    &--price{
+        text-align: center;
+        width: 50px;
+        padding-top: 45px;
+    }
+    &__animation{
+        @include flexed;
+        width: 50px;
+        background-color: $tertiary-color;
+        margin-right: -50px;
+        transition-duration: 1s;
+        &__iconbox{
+            font-size: 1.5em;
+            color: white;
+            transition-property: transform;
+            transition-duration: 1s;
         }
     }
 }

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>OhMyFood</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1">
         <script src="https://kit.fontawesome.com/5cf9a915c6.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/style.css">
     </head>
@@ -11,6 +11,7 @@
         <h1 class="Header__logo">ohmyfood</h1>
     </header>
     <main>
+        <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         <section class="research">
             <div class="research__container">
             <i class="fas fa-map-marker-alt research__mark"></i>
@@ -19,9 +20,7 @@
             <div class="research__menu">
                 <h2 class="research__menu--title">Réservez le menu qui vous convient</h2>
                 <p class="research__menu--text">Découvrez des restaurants d'exceptions, sélectionnés par nos soins</p>
-                <div class="research__menu--button">
-                    <input class="button" type="button" value="Explorer nos restaurants">
-                </div>
+                <input class="button" type="button" value="Explorer nos restaurants">
             </div>
         </section>
         <section class="guidelines">
@@ -58,15 +57,31 @@
             <h2 class="restaurant--title">Restaurants</h2>
             <div class="restaurant__box">
                 <article class="restaurant__card">
-                    <a class="restaurant__card__picturebox">
+                    <a href="la_palette_du_gout.html" class="restaurant__card__picturebox">
                         <img src="../src/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="restaurant__card__picturebox--picture">
                     </a>
                     <div class="restaurant__card__description">
                         <h3 class="restaurant__card__description--title">La palettes du goût</h3>
                         <p class="restaurant__card__description--text">Ménimontant</p>
                         <div class=label-box>
-                            <label class="heart-label" for="checkbox">
-                                <input type="checkbox" id="checkbox" />
+                            <label class="heart-label" for="checkbox-1">
+                                <input type="checkbox" id="checkbox-1" />
+                                <i class="fas fa-heart fullheart"></i>
+                                <i class="far fa-heart emptyheart"></i>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+                <article class="restaurant__card">
+                    <a class="restaurant__card__picturebox">
+                        <img src="../src/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="restaurant__card__picturebox--picture">
+                    </a>
+                    <div class="restaurant__card__description">
+                            <h3 class="restaurant__card__description--title">La palettes du goût</h3>
+                            <p class="restaurant__card__description--text">Ménimontant</p>
+                        <div class=label-box>
+                            <label class="heart-label" for="checkbox-2">
+                                <input type="checkbox" id="checkbox-2" />
                                 <i class="fas fa-heart fullheart"></i>
                                 <i class="far fa-heart emptyheart"></i>
                             </label>
@@ -81,24 +96,8 @@
                         <h3 class="restaurant__card__description--title">La palettes du goût</h3>
                         <p class="restaurant__card__description--text">Ménimontant</p>
                         <div class=label-box>
-                            <label class="heart-label" for="checkbox">
-                                <input type="checkbox" id="checkbox" />
-                                <i class="fas fa-heart fullheart"></i>
-                                <i class="far fa-heart emptyheart"></i>
-                            </label>
-                        </div>
-                    </div>
-                </article>
-                <article class="restaurant__card">
-                    <a class="restaurant__card__picturebox">
-                        <img src="../src/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="restaurant__card__picturebox--picture">
-                    </a>
-                    <div class="restaurant__card__description">
-                        <h3 class="restaurant__card__description--title">La palettes du goût</h3>
-                        <p class="restaurant__card__description--text">Ménimontant</p>
-                        <div class=label-box>
-                            <label class="heart-label" for="checkbox">
-                                <input type="checkbox" id="checkbox" />
+                            <label class="heart-label" for="checkbox-3">
+                                <input type="checkbox" id="checkbox-3" />
                                 <i class="fas fa-heart fullheart"></i>
                                 <i class="far fa-heart emptyheart"></i>
                             </label>
@@ -113,8 +112,8 @@
                         <h3 class="restaurant__card__description--title">La palettes du goût</h3>
                         <p class="restaurant__card__description--text">Ménimontant</p>
                         <div class=label-box>
-                            <label class="heart-label" for="checkbox">
-                                <input type="checkbox" id="checkbox" />
+                            <label class="heart-label" for="checkbox-4">
+                                <input type="checkbox" id="checkbox-4" />
                                 <i class="fas fa-heart fullheart"></i>
                                 <i class="far fa-heart emptyheart"></i>
                             </label>
