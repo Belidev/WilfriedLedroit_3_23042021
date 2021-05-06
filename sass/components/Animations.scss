@@ -38,3 +38,12 @@ input:checked + .fullheart {
         opacity: 0;
     }
 }
+@keyframes itemAppear {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+    }
+}
