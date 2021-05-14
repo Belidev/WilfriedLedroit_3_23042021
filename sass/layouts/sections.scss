@@ -96,6 +96,8 @@
 .restaurant{
     width: 100%;
     margin-top: 50px;
+    padding: 50px 0 0 0;
+    background-color: rgba(0, 0, 0, 5%);
     &--title{
         padding-left : 20px;
         font-size: 1.8em;
@@ -137,11 +139,10 @@
             &--title{
                 font-weight: bold;
                 width: 80%;
-                height:50%;
+                padding: 10px 0 5px 0;
             }
             &--text{
                 width: 80%;
-                height:50% ;
             }
         }
         &__picturebox{
@@ -157,12 +158,34 @@
         }
     }
 }
-.menu-background{
+.menu-background-PaletteDuGout{
     @media screen and (min-width: 787px) {
         background-image: url(../../src/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-size: cover;
+    }
+}
+.menu-background-laNoteEnchantee{
+    @media screen and (min-width: 787px) {
+        background-image: url(../../src/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+        background-size: cover;
+    }
+}
+.menu-background-aLaFrancaise{
+    @media screen and (min-width: 787px) {
+        background-image: url(../../src/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        background-size: cover;
+    }
+}
+.menu-background-leDeliceDesSens{
+    @media screen and (min-width: 787px) {
+        background-image: url(../../src/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        background-size: cover;
     }
 }
 .restaurant-box{
+    margin-top: 15px;
+    position: absolute;
+    z-index: -1;
     width: 100%;
     height: 300px;
     @media screen and (min-width: 787px) {
@@ -180,17 +203,16 @@ main{
     align-items: center;
 }
 .menu{
-    position: relative;
-    border-radius: 50px;
-    top: -50px;
+    margin-top: 250px;
+    padding-top: 50px;
+    border-radius: 50px 50px 0 0;
     width: 100%;
-    padding-bottom: 100px;
     background-color:rgb(240, 240, 240);
     @media screen and (min-width : 787px) {
         opacity: 0.95;
         width: 80%;
         top: 100px;
-        margin-bottom: 250px;
+        margin: 150px 0 150px 0;
         @include button-shadow;
     }
     &__box{
@@ -221,7 +243,7 @@ main{
         width: 80%;
         font-size: 1.7em;
         padding-left: 20px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         @media screen and (min-width : 787px) {
             width: 100%;
             font-size: 3em;
