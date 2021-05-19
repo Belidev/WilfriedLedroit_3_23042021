@@ -227,8 +227,6 @@ header {
 @media screen and (min-width: 1000px) {
   .restaurant--title {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 15px;
   }
 }
 .restaurant__box {
