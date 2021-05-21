@@ -19,12 +19,12 @@ input {
 .emptyheart {
     position: absolute;
     z-index: -1;
-    left: 5px;
+    left: 0px;
     transition: all 0.5s;
 }
 .fullheart {
     position: absolute;
-    left: 5px;
+    left : 0px;
     @include gradient-color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -51,7 +51,7 @@ header {
   border-radius: 30px;
   box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.28);
   height: 50px;
-  padding: 0 10px 0 20px;
+  padding: 0 10px 0 10px;
   margin: 35px 0 50px 0;
   color: #fff;
   font-weight: bold;
@@ -64,11 +64,18 @@ header {
 }
 
 .return-arrow {
-  position: absolute;
   color: black;
-  left: 40px;
-  top: 20px;
   font-size: 0.8em;
+}
+
+.arrow-box {
+  position: absolute;
+  left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: left;
 }
 
 .order {
@@ -79,11 +86,14 @@ header {
 }
 .order .order--button {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border-radius: 30px;
   box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.28);
   height: 50px;
   width: 175px;
-  padding: 0 10px 0 20px;
+  padding: 0 10px 0 10px;
   margin: 35px 0 50px 0;
   color: #fff;
   font-weight: bold;
@@ -190,15 +200,19 @@ header {
   width: 85%;
 }
 .guidelines__container__card__box--number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   position: relative;
-  width: 15px;
-  height: 15px;
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
   right: 10px;
   background-color: #9356DC;
   color: #fff;
-  padding: 5px;
   margin-right: 10px;
-  border-radius: 20px;
+  border-radius: 12.5px;
 }
 .guidelines__container__card__box--text {
   font-size: 0.9em;
@@ -277,9 +291,19 @@ header {
   width: 80%;
 }
 .restaurant__card__picturebox {
+  position: relative;
   display: block;
   height: 70%;
   width: 100%;
+}
+.restaurant__card__picturebox--info {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #1b6150;
+  box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px;
+  padding: 10px;
+  right: 15px;
+  top: 15px;
 }
 .restaurant__card__picturebox--picture {
   height: 100%;
@@ -372,8 +396,13 @@ main {
 @media screen and (min-width: 787px) {
   .menu__box .heart-label {
     position: relative;
-    left: -100px;
+    left: -50px;
     font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__box .heart-label {
+    left: -100px;
   }
 }
 .menu__box .heart-label .emptyheart {
@@ -627,7 +656,7 @@ footer ul li a:hover {
   border-radius: 30px;
   box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.28);
   height: 50px;
-  padding: 0 10px 0 20px;
+  padding: 0 10px 0 10px;
   margin: 35px 0 50px 0;
   color: #fff;
   font-weight: bold;
@@ -640,11 +669,18 @@ footer ul li a:hover {
 }
 
 .return-arrow {
-  position: absolute;
   color: black;
-  left: 40px;
-  top: 20px;
   font-size: 0.8em;
+}
+
+.arrow-box {
+  position: absolute;
+  left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: left;
 }
 
 .order {
@@ -655,11 +691,14 @@ footer ul li a:hover {
 }
 .order .order--button {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border-radius: 30px;
   box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.28);
   height: 50px;
   width: 175px;
-  padding: 0 10px 0 20px;
+  padding: 0 10px 0 10px;
   margin: 35px 0 50px 0;
   color: #fff;
   font-weight: bold;
@@ -695,13 +734,13 @@ input {
 .emptyheart {
   position: absolute;
   z-index: -1;
-  left: 5px;
+  left: 0px;
   transition: all 0.5s;
 }
 
 .fullheart {
   position: absolute;
-  left: 5px;
+  left: 0px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
